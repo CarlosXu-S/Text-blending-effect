@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+
+.container{
+    margin-top: 220px;
+    text-align: center;
+    background-color: #000;
+    filter: contrast(30);
+}
+
+.text{
+    font-size: 100px;
+    color: #fff;
+    letter-spacing: -50px;
+    animation: showup 3s linear forwards;
+}
+
+@keyframes showup {
+    0%{
+        filter: blur(10px);
+    }
+    100%{
+        letter-spacing: 10px;
+        filter: blur(2px);
+    }
+}
